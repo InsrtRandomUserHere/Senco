@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Senco</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <span id="CharacterCounter">Raw characters: 0</span>
+            <span id="WordCounter">Words: 0<br></span>
+            <span id="SentenceCounter">Sentences (period count): 0<br></span>
+            <span id="ParagraphCounter">Paragraphs: 0<br></span>
+            <span id="LineCounter">Lines: 0<br></span>
+        </div>
+
+        <div class="textcontainer">
+            <textarea id="textbox"></textarea>
+        </div>
+    </body>
+
+    <script>
+        const textinput = document.getElementById("textbox");
+        const wordcount = document.getElementById("WordCounter");
+        const sentcount = document.getElementById("SentenceCounter");
+        const parcount = document.getElementById("ParagraphCounter");
+        const linecount = document.getElementById("LineCounter");
+        const charcount = document.getElementById("CharacterCounter");
+
+        textinput.addEventListener('input', function handleChange(event) {
+            var textinput = event.target.value;
+
+            var CharCountValue = textinput.length;
+            charcount.textContent = `Raw characters: ${CharCountValue}`
+
+            var WordCountValue = textinput.trim().replace(/\s+/g, ' ').split(" ").length;
+            wordcount.textContent = `Words: ${WordCountValue}`;
+
+            var SentenceCountValue = (textinput.match(/\./g) || []).length;
+            sentcount.textContent = `Sentences (period count): ${SentenceCountValue}`
+
+            var ParagraphCountValue = textinput.split("\n\n").length;
+            parcount.textContent = `Paragraphs: ${ParagraphCountValue}`
+
+            var LineCountValue = textinput.split("\n").length;
+            linecount.textContent = `Lines: ${LineCountValue}`            
+        });
+    </script>
+</html>
+
+<!--insrt-->
