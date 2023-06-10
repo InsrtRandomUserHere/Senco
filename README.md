@@ -1,4 +1,4 @@
-# Senco
+# [Senco](https://insrtrandomuserhere.github.io/senco/)
 
 What is Senco? Well, Senco is just a quick project I made to help me when writing essays that has a sentence count threshold.<br><br>
 Senco stands for "Sentence Counter", which is what it was originally intended to do. <br>
