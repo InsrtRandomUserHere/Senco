@@ -46,6 +46,11 @@ textarea {
     font-family: Arial, sans-serif;
     font-size: 18px;
     color: aliceblue;
+
+    border: none;
+    outline: none;
+
+    padding: 12px 20px;
 }
 
 /*insrt*/
