@@ -1,5 +1,5 @@
 html {
-    background-color: #6E8387;
+    background-color: #09090a;
 }
 
 .container {
@@ -9,7 +9,7 @@ html {
     text-align: center;
     margin: 10px auto;
   
-    background-color: #A4B8C4;
+    background-color: #4d4d56;
     width: fit-content;
     border: 2px;
     border-style: solid;
@@ -25,7 +25,7 @@ div > span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     text-align: center;
-    color: #292F36;
+    color: #02080f;
 }
 
 .textcontainer {
@@ -35,7 +35,7 @@ div > span {
 }
 
 textarea {
-    background-color: #C8D3D5;
+    background-color: #171617;
     border-radius: 10px;
     text-align: justify;
     width: 50%;
@@ -45,6 +45,7 @@ textarea {
 
     font-family: Arial, sans-serif;
     font-size: 18px;
+    color: aliceblue;
 }
 
 /*insrt*/
